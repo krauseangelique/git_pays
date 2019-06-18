@@ -22,13 +22,13 @@
     /* si mon fichier n'existe pas alors je décide que pays est un tableau vide []*/
 
     if($pays === false) {
-        $fruits = ["Belgique","France"];
+        $pays = ["Belgique","France"];
     }
 
     if (isset($_GET["pays"])) {
         
         $pay = $_GET["pays"];
-    }
+   
         
 
         if(in_array($pay,$pays))
@@ -40,7 +40,7 @@
             saveData($pays, $nomFichier);
         }
     
-
+    }
    
     ?>
 
